@@ -215,6 +215,6 @@ public class EmployeeRepository
         employee.setCountry( request.getParameter( "country" ) );
         employee.setPhoneNumber( request.getParameter( "phoneNumber" ) );
         employee.setEmail( request.getParameter( "email" ) );
-        employee.setEmail( request.getParameter( "isDeleted" ) );
+        employee.setIsDeleted( Boolean.parseBoolean( request.getParameter( "isDeleted" ) ) );
     }
 }
